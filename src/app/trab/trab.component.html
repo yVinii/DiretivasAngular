@@ -1,0 +1,8 @@
+<h1>Tarefas</h1>
+<ul *ngFor="let item of Tarefas" [ngStyle]="{'text-decoration': item.status ? 'line-through' : 'none'}">
+        <li>{{item.descricao}}
+        <button (click)="toggleConcluir(item)">OK</button>
+        </li>
+</ul>
+
+
